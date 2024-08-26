@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id ("androidx.navigation.safeargs.kotlin")
     id ("com.google.devtools.ksp")
+
 }
 
 android {
@@ -35,9 +36,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
-        viewBinding=true
+
+    buildFeatures {
+        viewBinding = true
     }
+
 }
 
 dependencies {
@@ -65,4 +68,5 @@ dependencies {
 
     implementation ("androidx.room:room-rxjava3:$room_version")
     implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+
 }
